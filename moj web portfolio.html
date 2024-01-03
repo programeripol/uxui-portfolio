@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dora SS</title>
+  <link href="moj web.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <img class="sivapozadina">
+    <img src="dora.png" alt="dora" class="dora" />
+
+
+    <h2 class="dlogo">D</h2>
+
+    <div class="navigacija">
+      <a href="omeni.html" class="omeni" data-page="omeni.html">O meni</a>
+      <a href="#" class="portfolio" id="portfolio-link">Portfolio</a>
+      <a href="#" class="kontakt" id="kontakt-link">Kontakt</a>
+    </div>
+
+
+    <h1 class="bokjasamdora">Bok! Ja sam Dora.</h1>
+
+    <h2 class="dizajniram">Dizajniram,</h2>
+    <h2 class="kodiram">kodiram,</h2>
+    <h2 class="montiram">montiram</h2>
+    <h2 class="pišem">& pišem.</h2>
+
+    <span class="paragraf">
+    <p>Digitalni nomad iz Zagreba s iskustvom u pisanju, kreiranju
+      sadržaja i video montaži. Entuzijastična početnica spremna na
+      putovanje kroz svijet UX-a i kodiranja.</p><br />
+    </span>
+
+
+
+    <button class="gumbmojiradovi">Moji radovi</button>
+
+    
+    <div class="menu" id="portfolio-section">
+      <a href="#" class="Sveusluge" id="sveLink">Sve usluge</a>
+      <a href="uxui.html" class="UXUIProjekti" id="uxLink" data-page="uxui.html">UX/UI Projekti</a>
+      <a href="frontend.html" class="Front-end" id="frontLink">Front-end</a>
+      <a href="#" class="Videomontaža" id="montažaLink">Video montaža</a>
+      <a href="#" class="Kreiranjesadržaja" id="kreiranjeLink">Kreiranje sadržaja</a>
+      <a href="#" class="Copy" id="copyLink">Članci/Copy</a>
+    </div>
+
+
+
+    <div class="prvired">
+      <a href="https://www.figma.com/proto/xEsbTbro3m9XQtsq7wV8N5/Korijen-finale?node-id=4-2&starting-point-node-id=4%3A2&mode=design&t=AOub1EWjoB9915PP-1" target="_blank" rel="noreferrer noopener" class="d-poetna-link">
+        <div class="containerodslike1">
+          <img src="slika1.png" alt="" class="slika1" onclick="filterImages('Sveusluge UXUIProjekti Front-end')">
+        </div>
+      </a>
+
+
+      <div class="containerslika2">
+        <img src="slika2.png" alt="" class="slika2" onclick="openPDF()">
+      </div>
+
+
+      <div class="containerslika3">
+        <a href="https://www.figma.com/file/yplOaIevVBBoL5QQCxFLcM/Untitled?type=design&node-id=0%3A1&mode=design&t=DSWJqf2T6C4bYwFR-1" target="_blank" rel="noreferrer noopener" class="d-poetna-link">
+          <img src="3.png" alt="" class="slika3" />
+      </div>
+    </div>
+
+
+
+    <div class="drugired">
+      <a href="http://www.youtube.com/@VanLifeCroatia/videos" target="_blank">
+        <div class="containerodslike4">
+          <img src="4.png" alt="" class="slika4" />
+        </div>
+      </a>
+
+
+      <a href="https://programeripol.github.io/todoapp/" target="_blank" rel="noreferrer noopener" class="d-poetna-link2">
+        <div class="containerodslike5">
+          <img src="5.png" alt="" class="slika5" />
+        </div>
+      </a>
+
+
+      <a href="https://www.youtube.com/@SlavicadeJong" target="_blank" rel="noreferrer noopener" class="d-poetna-link3">
+        <div class="containerodslike6">
+            <img src="6.png" alt="" class="slika6"/>
+        </div>
+      </a>
+
+    </div>
+
+
+
+    <div class="trećired">
+      <a href="https://specijali.net.hr/pod-vedrim-nebom/" target="_blank" rel="noreferrer noopener" class="d-poetna-link1">
+        <div class="containerodslike7">
+          <div class="containerslika7">
+            <img src="7.png" alt="" class="slika7" />
+          </div>
+        </div>
+      </a>
+
+      <div class="containerodslike8">
+        <div class="containerslika8">
+          <img src="8.png" alt="" class="slika8" />
+        </div>
+      </div>
+
+      <div class="containerodslike9">
+        <div class="containerslika9">
+          <a href="https://youtube.com/playlist?list=PLg6uDVn_UiquMCt2TzKIssatecfxj0FTo&si=tdsh7cGeahqxnvM5" target="_blank" rel="noreferrer noopener">
+            <img src="9.png" alt="" class="slika9" onclick="openPDF()">
+          </a>
+        </div>
+      </div>
+      
+
+
+    </div>
+    
+
+  <!-- Scroll to top button -->
+  <div id="scrollToTopBtn" class="scroll-to-top">&#8593;</div>
+
+
+  <div>
+    <img class="sivapozadina2" id="kontakt">
+    <h2 class="kontaktirajme">KONTAKTIRAJTE ME</h2>
+    <p class="kontaktp1">Imate pitanje ili želite surađivati?<br><br>Pošaljite mi poruku putem forme.<br> <br> <br><br><br>
+      <a>dorasuskovic@gmail.com</a> <br> <br>
+      <a href="https://www.instagram.com/vanlife_croatia" target="_blank">@vanlife_croatia</a></p>
+  
+    <form class="forma" action="procesiraj_formu.php" method="post">
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" required placeholder="Unesite vaše ime">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Unesite vašu email adresu">
+      <br>
+      <label for="poruka">Poruka:</label>
+      <textarea id="poruka" name="poruka" rows="4" required placeholder="Unesite vašu poruku"></textarea>
+  
+      <input type="submit" value="Pošalji">
+
+    </form>
+  
+  
+    </div>
+  </div>
+  
+  
+
+
+
+  <script src="mojwebjavascript.js"></script>
+
+</body>
+
+</html>

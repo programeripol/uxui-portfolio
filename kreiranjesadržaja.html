@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dora SS</title>
+  <link href="kreiranje sadržaja.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <img class="sivapozadina">
+    <img src="dora.png" alt="dora" class="dora" />
+
+
+    <h2 class="dlogo">D</h2>
+
+    <div class="navigacija">
+      <a href="omeni.html" class="omeni" data-page="omeni.html">O meni</a>
+      <a href="#" class="portfolio" id="portfolio-link">Portfolio</a>
+      <a href="#" class="kontakt" id="kontakt-link">Kontakt</a>
+    </div>
+
+
+    <h1 class="bokjasamdora">Bok! Ja sam Dora.</h1>
+
+    <h2 class="dizajniram">Dizajniram,</h2>
+    <h2 class="kodiram">kodiram,</h2>
+    <h2 class="montiram">montiram</h2>
+    <h2 class="pišem">& pišem.</h2>
+
+    <span class="paragraf">
+    <p>Digitalni nomad iz Zagreba s iskustvom u pisanju, kreiranju
+      sadržaja i video montaži. Entuzijastična početnica spremna na
+      putovanje kroz svijet UX-a i kodiranja.</p><br />
+    </span>
+
+
+
+    <button class="gumbmojiradovi">Moji radovi</button>
+
+    
+    <div class="menu" id="portfolio-section">
+      <a href="#" class="Sveusluge" id="sveLink">Sve usluge</a>
+      <a href="uxui.html" class="UXUIProjekti" id="uxLink" data-page="uxui.html">UX/UI Projekti</a>
+      <a href="frontend.html" class="Front-end" id="frontLink">Front-end</a>
+      <a href="#" class="Videomontaža" id="montažaLink">Video montaža</a>
+      <a href="#" class="Kreiranjesadržaja" id="kreiranjeLink">Kreiranje sadržaja</a>
+      <a href="#" class="Copy" id="copyLink">Članci/Copy</a>
+    </div>
+
+
+
+    <div class="prvired">
+      <a href="http://www.youtube.com/@VanLifeCroatia/videos" target="_blank">
+        <div class="containerodslike1">
+          <img src="4.png" alt="" class="slika4" />
+        </div>
+      </a>
+
+
+      <div class="containerslika2">
+        <img src="slika2.png" alt="" class="slika2" onclick="openPDF()">
+      </div>
+
+
+  </div>
+    
+
+  <!-- Scroll to top button -->
+  <div id="scrollToTopBtn" class="scroll-to-top">&#8593;</div>
+
+
+  <div>
+    <img class="sivapozadina2" id="kontakt">
+    <h2 class="kontaktirajme">KONTAKTIRAJTE ME</h2>
+    <p class="kontaktp1">Imate pitanje ili želite surađivati?<br><br>Pošaljite mi poruku putem forme.<br> <br> <br><br><br>
+      <a>dorasuskovic@gmail.com</a> <br> <br>
+      <a href="https://www.instagram.com/vanlife_croatia" target="_blank">@vanlife_croatia</a></p>
+  
+    <form class="forma" action="procesiraj_formu.php" method="post">
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" required placeholder="Unesite vaše ime">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Unesite vašu email adresu">
+      <br>
+      <label for="poruka">Poruka:</label>
+      <textarea id="poruka" name="poruka" rows="4" required placeholder="Unesite vašu poruku"></textarea>
+  
+      <input type="submit" value="Pošalji">
+
+    </form>
+  
+  
+    </div>
+  </div>
+  
+  
+
+
+
+  <script src="kreiranje sadržaja.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,822 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+  .sivapozadina {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 820px; /* Ovde možeš postaviti visinu koja ti odgovara */
+    position: absolute;
+    background-color: #F6F6F6;
+    box-sizing: border-box;
+
+  }
+
+  
+  
+  @media only screen and (min-width: 1801px) {
+    /* Dodatni stilovi za veće ekrane */
+    .sivapozadina {
+      height: 820px; /* Ažuriraj visinu ako je potrebno */
+    }
+  }
+  
+  .dlogo:hover {
+    font-size: 65px; /* Increase font size on hover */
+    opacity: 0.4; /* Change opacity to 40% on hover */
+    display: inline-block;
+    cursor: pointer;
+
+  }
+
+
+  .dora {
+    top: 0;
+    left: 76%; /* Postavi polovinu ekrana na levoj strani */
+    transform: translateX(-50%); /* Centriraj horizontalno */
+    width: 48.6%; /* Prilagodi širinu slike relativnoj veličini ekrana */
+    height: auto;
+    position: absolute;
+  }
+
+  @media only screen and (min-width: 1801px) {
+    /* Dodatni stilovi za veće ekrane */
+    .dora {
+      width: 38.8%; /* Prilagodi širinu slike relativnoj veličini ekrana */
+      left: 80.6%; /* Postavi polovinu ekrana na levoj strani */
+
+    }
+  }
+  
+
+  .dlogo {
+    top: -30px;
+    left: 121px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 50px;
+    font-style: bold; /* Use 'bold' instead of 'Bold' */
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif; /* Wrap font name in quotes */
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Add a smooth transition effect for both font-size and color */
+  }
+  
+
+  .navigacija {
+    gap: 100px;
+    top: 30px;
+    left: 350px;
+    width: 605px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+
+
+  .omeni,
+  .portfolio,
+  .kontakt {
+    color: rgba(0, 0, 0, 1);
+    font-size: 25px;
+    font-style: Regular;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform to the transition */
+    display: inline-block;
+  }
+  
+  .omeni:hover,
+  .portfolio:hover,
+  .kontakt:hover {
+    opacity: 0.4; /* Change opacity to 40% on hover */
+    font-size: 28px; /* Increase font size on hover */
+    transform: scale(1); /* Increase the scale factor as needed */
+  }
+
+
+  .bokjasamdora
+   {
+    top: 250px;
+    left: 121px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 60px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Libre Caslon Text;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 5;
+    text-transform: uppercase;
+  }
+
+  .dizajniram {
+    top: 350px;
+    left: 121px;
+    color: #F6F6F6;
+    width: 236px;
+    height: auto;
+    position: absolute;
+    font-size: 45px;
+    font-style: Regular;
+    text-align: left;
+    font-family: 'Libre Franklin', sans-serif; /* Wrap font name in quotes */
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Add a 1px black stroke */
+    z-index: 3;
+  }
+
+  .dizajniram:hover {
+    text-shadow: -1px -1px 0 #6AE3FF, 1px -1px 0 #6AE3FF, -1px 1px 0 #6AE3FF, 1px 1px 0 #6AE3FF;
+    }
+
+
+    .dizajniram::after {
+      content: url('22.png');
+      display: none; /* Initially hide the image */
+      position: absolute;
+      top: -70px; /* Position the image where the text is initially */
+      left: -40px; /* Position the image where the text is initially */
+      width: 100%; /* Set the width of the image */
+      height: 100%; /* Set the height of the image */
+      z-index: -5; /* Place the image behind the text */
+    }
+    
+    .dizajniram:hover::after {
+      display: block; /* Show the image on hover */
+      z-index: -10; /* Place the image behind the text */
+    }
+
+
+
+  .kodiram {
+    top: 350px;
+    left: 360px;
+    color: #F6F6F6;
+    width: 186px;
+    height: auto;
+    position: absolute;
+    font-size: 45px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Add a 1px black stroke */
+    z-index: 3;
+  }
+
+  .kodiram:hover {
+    text-shadow: -1px -1px 0 #FF6A8B, 1px -1px 0 #FF6A8B, -1px 1px 0 #FF6A8B, 1px 1px 0 #FF6A8B;
+    }
+
+  .kodiram::after {
+      content: url('21.png');
+      display: none; /* Initially hide the image */
+      position: absolute;
+      top: -90px; /* Position the image where the text is initially */
+      left: -77px; /* Position the image where the text is initially */
+      z-index: -5; /* Place the image behind the text */
+      }
+      
+      .kodiram:hover::after {
+        display: block; /* Show the image on hover */
+        z-index: -10; /* Place the image behind the text */
+      }
+
+
+
+
+
+  .montiram {
+    top: 350px;
+    left: 540px;
+    color: #F6F6F6;
+    width: 209px;
+    height: auto;
+    position: absolute;
+    font-size: 45px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Add a 1px black stroke */
+    z-index: 3;
+  }
+
+  .montiram:hover {
+    text-shadow: -1px -1px 0 #FFC700, 1px -1px 0 #FFC700, -1px 1px 0 #FFC700, 1px 1px 0 #FFC700;
+    z-index: 1; /* Ensure the text is above the image */
+    }
+
+
+    .montiram::after {
+      content: url('20.png');
+      display: none; /* Initially hide the image */
+      position: absolute;
+      top: -70px; /* Position the image where the text is initially */
+      left: -80px; /* Position the image where the text is initially */
+      z-index: -10; /* Place the image behind the text */
+      }
+      
+      .montiram:hover::after {
+        display: block; /* Show the image on hover */
+        z-index: -1; /* Place the image behind the text */
+      }
+
+
+  .pišem {
+    top: 350px;
+    left: 730px;
+    color: #F6F6F6;
+    width: 197px;
+    height: auto;
+    position: absolute;
+    font-size: 45px;
+    font-style: Regular;
+    text-align: left;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Add a 1px black stroke */
+    background: none; /* Remove the background image */
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+    z-index: 1;
+  }
+  
+  
+  .pišem:hover {
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Add a 1px black stroke */
+    z-index: 1; /* Ensure the text is above the image */
+  }
+
+  .pišem::after {
+    content: url('19.png');
+    display: none; /* Initially hide the image */
+    position: absolute;
+    top: -50px; /* Position the image where the text is initially */
+    left: -60px; /* Position the image where the text is initially */
+    z-index: -5; /* Place the image behind the text */
+    }
+    
+    .pišem:hover::after {
+      display: block; /* Show the image on hover */
+      z-index: -1; /* Place the image behind the text */
+    }
+
+  
+
+.paragraf {
+    top: 430px;
+    left: 121px;
+    color: rgba(0, 0, 0, 1);
+    width: 650px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: justify;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 10;
+  }
+
+
+  .gumbmojiradovi {
+    top: 600px;
+    left: 121px;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px; /* Adjust font size as needed */
+    font-family: Libre Caslon Text;
+    background-color: #4A4A4A;
+    border: none;
+    color: #FFFFFF; /* Text color, adjust as needed */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+
+  .gumbmojiradovi:hover {
+    background-color: #E6E3E6;
+    color: #000000; /* Change text color to black on hover */
+  }
+
+
+  .menu {
+    gap: 34px;
+    top: 880px;
+    left: 350px;
+    width: 1353px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    font-size: 25px;
+    font-style: Regular;
+    font-family: 'Libre Caslon Text', serif;
+  }
+
+
+.Sveusluge,
+.UXUIProjekti,
+.Front-end,
+.Videomontaža,
+.Kreiranjesadržaja,
+.Copy
+ {
+    color: rgba(0, 0, 0, 1);
+    font-size: 25px;
+    font-style: Regular;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform to the transition */
+    display: inline-block;
+  }
+  
+  .Sveusluge:hover,
+  .UXUIProjekti:hover,
+  .Front-end:hover,
+  .Videomontaža:hover,
+  .Kreiranjesadržaja:hover,
+  .Copy:hover {
+    opacity: 0.4; /* Change opacity to 40% on hover */
+    font-size: 28px; /* Increase font size on hover */
+    transform: scale(1); /* Increase the scale factor as needed */
+  }
+
+ 
+
+  .Sveusluge.bold,
+  .UXUIProjekti.bold,
+  .Front-end.bold,
+  .Videomontaža.bold,
+  .Kreiranjesadržaja.bold,
+  .Copy.bold {
+    font-weight: bold;
+    opacity: 100%; /* Change opacity to 40% on hover */
+
+  }
+
+
+  .Kreiranjesadržaja {
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
+  .prvired {
+    gap: 50px;
+    top: 950px;
+    left: 57%;
+    transform: translateX(-50%);
+    width: 1080px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  .drugired {
+    gap: 50px;
+    top: 1230px;
+    left: 54%;
+    transform: translateX(-50%); /* Use transform to adjust for half of the element's width */
+    width: 1080px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+
+ .trećired {
+  gap: 50px;
+  top: 1510px;
+  left: 57%;
+  transform: translateX(-50%); /* Use transform to adjust for half of the element's width */
+  width: 1080px;
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  }
+
+
+  .containerodslike1 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  
+    .slika1 {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+    transition: transform 0.5s; /* Add a smooth transition effect */
+  }
+
+  .slika1:hover {
+    content: url(10.png);
+    opacity: 1.0;
+  }
+
+
+  
+
+  .containerslika2 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .slika2 {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+    cursor: pointer; /* Add this line to set the pointer cursor */
+  }
+
+.slika2:hover{
+  content: url(11.png)
+  }
+
+
+  .containerslika3 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .slika3 {
+    top: 0px;
+    left: 1.5442092418670654px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+  .slika3:hover{
+    content: url(12.png);
+  }
+
+  .containerodslike4 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .slika4 {
+    top: 0.30859375px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+.slika4:hover{
+  content: url(13.png);
+}
+
+  .containerodslike5 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .slika5 {
+    top: 0px;
+    left: 1.20654296875px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+.slika5:hover{
+  content: url(14.png);
+}
+
+.containerodslike6 {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+
+  .slika6 {
+    top: 0px;
+    left: 1.5458226203918457px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+.slika6:hover{
+  content: url(15.png);
+}
+
+
+  .containerodslike7 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .containerslika7 {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .slika7 {
+    top: 1.546306848526001px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+  .slika7:hover{
+    content: url(16.png);
+  }
+
+  .containerodslike8 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .containerslika8 {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+
+  .slika8 {
+    top: 1.546306848526001px;
+    left: 1.5458984375px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+    cursor: pointer; /* Add this line to set the pointer cursor */
+  }
+
+  .slika8:hover{
+    content: url(17.png);
+  }
+
+  .containerodslike9 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .containerslika9 {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .slika9 {
+    top: 1.546306848526001px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+    cursor: pointer; /* Add this line to set the pointer cursor */
+  }
+
+  .slika9:hover{
+    content: url(18.png);
+  }
+
+
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #4A4A4A;
+    color: #FFFFFF;
+    font-size: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: none; /* Initially hide the button */
+    font-weight: bold; /* Make the arrow bolder */
+    font-family: 'Arial', sans-serif; /* Change to a font that supports the arrow character */
+    z-index: 10;
+
+  }
+  
+  .scroll-to-top:hover {
+    opacity: 0.4; /* Change opacity to 40% on hover */
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }
+  
+
+
+
+
+
+/* Kontakt dio */
+
+.sivapozadina2 {
+  top: 1800px;
+  left: 0px;
+  width: 100%;
+  height: 620px;
+  position: absolute;
+  background-color: #F6F6F6;
+}
+
+@media only screen and (min-width: 1801px) {
+  /* Dodatni stilovi za veće ekrane */
+  .sivapozadina2 {
+    height: 820px; /* Ažuriraj visinu ako je potrebno */
+  }
+}
+
+.kontaktirajme {
+  top: 1850px;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 1);
+  left: 5%;
+  font-weight: 700;
+  font-family: Libre Caslon Text;
+  height: auto;
+  position: absolute;
+  text-align: left;
+}
+
+.kontaktp1 {
+  top: 1950px;
+  left: 5%;
+  color: rgba(0, 0, 0, 1);
+  width: 90%;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: justify;
+  font-family: Libre Franklin;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.kontaktp1 a {
+  color: #000; /* Boja linka */
+  text-decoration: none; /* Ukloni podcrtavanje */
+  font-weight: bold; /* Podebljaj tekst */
+  transition: color 0.3s, background-color 0.3s; /* Animacija promjene boje i pozadine */
+}
+
+.kontaktp1 a:hover {
+  opacity: 0.4; /* Change opacity to 40% on hover */
+}
+
+form {
+  position: relative;
+  top: 1900px;
+  left: 48.7%;
+  font-family: Libre Franklin;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+form label,
+form textarea,
+form input {
+  margin-bottom: -5px;
+  width: 25%;
+  padding: 10px;
+  font-family: Libre Franklin;
+  font-size: 18px;
+}
+
+/* Prilagođeni stil za gumb "Pošalji" unutar forme */
+form input[type="submit"] {
+  width: 160px;
+  height: 50px;
+  top: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: Libre Caslon Text;
+  background-color: #4A4A4A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  left: 0;
+}
+
+form input[type="submit"]:hover {
+  background-color: #E6E3E6;
+  color: #000000;
+}

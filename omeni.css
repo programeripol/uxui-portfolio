@@ -1,0 +1,508 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+  .sivapozadina {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 820px; /* Ovde možeš postaviti visinu koja ti odgovara */
+    position: absolute;
+    background-color: #F6F6F6;
+    z-index: -100;
+  }
+  
+  @media only screen and (min-width: 1201px) {
+    /* Dodatni stilovi za veće ekrane */
+    .sivapozadina {
+      height: 820px; /* Ažuriraj visinu ako je potrebno */
+    }
+  }
+
+
+  .dora {
+    top: 0;
+    left: 76%; /* Postavi polovinu ekrana na levoj strani */
+    transform: translateX(-50%); /* Centriraj horizontalno */
+    width: 48.6%; /* Prilagodi širinu slike relativnoj veličini ekrana */
+    height: auto;
+    position: absolute;
+    opacity: 0.4;
+  }
+
+  @media only screen and (min-width: 1801px) {
+    /* Dodatni stilovi za veće ekrane */
+    .dora {
+      width: 38.8%; /* Prilagodi širinu slike relativnoj veličini ekrana */
+      left: 80.6%; /* Postavi polovinu ekrana na levoj strani */
+
+    }
+  }
+
+  
+  .dlogo {
+    top: -30px;
+    left: 121px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 50px;
+    font-style: bold; /* Use 'bold' instead of 'Bold' */
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif; /* Wrap font name in quotes */
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Add a smooth transition effect for both font-size and color */
+    cursor: pointer;
+  }
+  
+  .dlogo:hover {
+    font-size: 65px; /* Increase font size on hover */
+    opacity: 0.4; /* Change opacity to 40% on hover */
+    display: inline-block;
+    cursor: pointer;
+
+  }
+
+  .navigacija {
+    gap: 100px;
+    top: 30px;
+    left: 350px;
+    width: 605px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+
+  .omeni{
+    color: rgba(0, 0, 0, 1);
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform to the transition */
+    display: inline-block;
+  }
+
+  .portfolio,
+  .kontakt {
+    color: rgba(0, 0, 0, 1);
+    font-size: 25px;
+    font-style: Regular;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform to the transition */
+    display: inline-block;
+  }
+  
+  .portfolio:hover,
+  .kontakt:hover {
+    opacity: 0.4; /* Change opacity to 40% on hover */
+    font-size: 28px; /* Increase font size on hover */
+    transform: scale(1); /* Increase the scale factor as needed */
+  }
+
+
+  .bokjasamdora {
+    top: 250px;
+    left: 121px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 60px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Libre Caslon Text;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 3;
+    text-transform: uppercase;
+  }
+
+  .digitalna {
+    top: 350px;
+    left: 121px;
+    color: #000000;
+    width: 800px;
+    height: auto;
+    position: absolute;
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
+
+.paragraf1 {
+    top: 430px;
+    left: 121px;
+    color: rgba(0, 0, 0, 1);
+    width: 700px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: justify;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+
+  .gumbmojevještine {
+    top: 650px;
+    left: 121px;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px; /* Adjust font size as needed */
+    font-family: Libre Caslon Text;
+    background-color: #4A4A4A;
+    border: none;
+    color: #FFFFFF; /* Text color, adjust as needed */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+
+  .gumbmojevještine:hover {
+    background-color: #E6E3E6;
+    color: #000000; /* Change text color to black on hover */
+  }
+
+
+
+
+
+.Svevještine,
+.Adobealati,
+.UXUI,
+.Društvene {
+    color: rgba(0, 0, 0, 1);
+    font-size: 25px;
+    font-style: Regular;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform to the transition */
+    display: inline-block;
+  }
+  
+  .Svevještine:hover,
+  .Adobealati:hover,
+  .UXUI:hover,
+  .Društvene:hover {
+    opacity: 0.4; /* Change opacity to 40% on hover */
+    font-size: 28px; /* Increase font size on hover */
+    transform: scale(1); /* Increase the scale factor as needed */
+    cursor: pointer;
+  }
+
+  .Svevjestine-bold {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+.menuomeni a[role='button'].bold {
+  font-weight: bold;
+}
+
+.fixed-menu {
+  position: fixed !important;
+  top: 0px !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: #fff !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  gap: 38px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 15px 20px !important;
+  box-sizing: border-box !important;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Dodano: Box shadow s pomakom prema dolje */
+
+}
+
+
+
+
+
+
+
+
+  .prvired {
+    gap: 50px;
+    top: 950px;
+    left: 51%;
+    transform: translateX(-50%);
+    width: 880px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .containerodslike1 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  
+    .slika1 {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+    transition: transform 0.5s; /* Add a smooth transition effect */
+  }
+
+
+  .containerslika2 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .slika2 {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+
+
+  .containerslika3 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .slika3 {
+    top: 0px;
+    left: 1.5442092418670654px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+
+
+ 
+  .adobealati {
+    top: 1220px;
+    left: 395px;
+    color: #000000;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+
+  
+  .paragraf2 {
+    top: 1300px;
+    left: 395px;
+    color: rgba(0, 0, 0, 1);
+    width: 900px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: justify;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  .uxui {
+    top: 1550px;
+    left: 395px;
+    color: #000000;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .paragraf3 {
+    top: 1630px;
+    left: 395px;
+    color: rgba(0, 0, 0, 1);
+    width: 900px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: justify;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  .mreze {
+    top: 2250px;
+    left: 395px;
+    color: #000000;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .paragraf4 {
+    top: 2330px;
+    left: 395px;
+    color: rgba(0, 0, 0, 1);
+    width: 900px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: justify;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  .paragrafzadnji{
+    top: 2530px;
+    left: 395px;
+    color: rgba(0, 0, 0, 1);
+    width: 900px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: justify;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+
+
+
+  .sivapozadina2 {
+    top: 2700px;
+    left: 0px;
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    background-color: #F6F6F6;
+  }
+  
+  @media only screen and (min-width: 1801px) {
+    /* Dodatni stilovi za veće ekrane */
+    .sivapozadina2 {
+      height: 820px; /* Ažuriraj visinu ako je potrebno */
+    }
+  }
+
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #4A4A4A;
+    color: #FFFFFF;
+    font-size: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-weight: bold; /* Make the arrow bolder */
+    font-family: 'Arial', sans-serif; /* Change to a font that supports the arrow character */
+    z-index: 10;
+  }
+  
+  .scroll-to-top:hover {
+    opacity: 0.4; /* Change opacity to 40% on hover */
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }
+
+
+
+
+
