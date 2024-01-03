@@ -1,0 +1,5 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      index: "moj web portfolio.html"
