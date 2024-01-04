@@ -1,8 +1,8 @@
 // kad klikneš d da te odvede na homepage
 
 document.querySelector('.dlogo').addEventListener('click', function() {
-    // Redirect to "moj web portfolio.html"
-    window.location.href = 'moj web portfolio.html';
+    // Redirect to "index.html"
+    window.location.href = 'index.html';
 });
 
 
@@ -15,8 +15,8 @@ document.querySelector('.dlogo').addEventListener('click', function() {
             portfolioLink.addEventListener("click", function (event) {
                 event.preventDefault();
     
-                // Navigate to "moj web portfolio.html" with hash for the section
-                window.location.href = 'moj web portfolio.html#portfolio-section';
+                // Navigate to "index.html" with hash for the section
+                window.location.href = 'index.html#portfolio-section';
             
             });
         }
@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
       kontaktLink.addEventListener("click", function (event) {
           event.preventDefault();
 
-          // Navigate to "moj web portfolio.html"
-          window.location.href = 'moj web portfolio.html#kontakt';
+          // Navigate to "index.html"
+          window.location.href = 'index.html#kontakt';
       });
   }
 });

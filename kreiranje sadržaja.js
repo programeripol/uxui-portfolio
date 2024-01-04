@@ -1,8 +1,8 @@
 // kad klikneš d da te odvede na homepage
 
 document.querySelector('.dlogo').addEventListener('click', function() {
-  // Redirect to "moj web portfolio.html"
-  window.location.href = 'moj web portfolio.html';
+  // Redirect to "index.html"
+  window.location.href = 'index.html';
 });
 
 
@@ -238,8 +238,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // Spriječi uobičajeno ponašanje veze (navigaciju)
       event.preventDefault();
       
-      // Preusmjeri na mojwebportfolio.html s fragmentom '#portfolio-section'
-      window.location.href = 'moj web portfolio.html#portfolio-section';
+      // Preusmjeri na index.html s fragmentom '#portfolio-section'
+      window.location.href = 'index.html#portfolio-section';
     });
   }
 });
